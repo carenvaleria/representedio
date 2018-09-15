@@ -1,7 +1,9 @@
 const express = require('express')
 const db = require('./models/index')
 const bodyParser = require('body-parser')
-const port = proccess.env.PORT || 3000
+const port = process.env.PORT || 3000
+const path = require('path')
+
 
 const app = express()
 
@@ -22,7 +24,13 @@ app.use((err, req, res, next) => {
 	res.status(err.status || 500).send(err.message || 'Internal server error.')
 })
 
+
+db.sync()
+
 app.listen(port, () => {
 	console.log(`listening on port ${port}`)
 })
+
+
+
 
