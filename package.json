@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Creative",
     "name": "startbootstrap-creative",
     "version": "5.0.1",
@@ -43,4 +44,28 @@
         "gulp-sass": "4.0.1",
         "gulp-uglify": "3.0.1"
     }
+=======
+  "name": "representedio",
+  "version": "1.0.0",
+  "description": "Diversity Hackathon Project - Represented.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carenvaleria/representedio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carenvaleria/representedio/issues"
+  },
+  "homepage": "https://github.com/carenvaleria/representedio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "sequelize": "^4.38.1"
+  }
+>>>>>>> cc8fc8856ceafe02759f4c8ef5c3ffeb1a86a8ae
 }
