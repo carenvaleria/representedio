@@ -181,6 +181,7 @@ header.masthead {
   background-image: url("../img/kuppel.jpg");
   background-position: center center;
   background-size: cover;
+  opacity: .2;
 }
 
 header.masthead hr {
