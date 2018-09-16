@@ -1,7 +1,9 @@
+
 .logo-wrapper {
   width: 20%;
   display: table-cell;
   vertical-align: middle;
+  padding-left: 20px;
 }
 
 .logo-wrapper img {
@@ -11,4 +13,8 @@
 .container {
   width: 80%;
   display: table-cell;
+}
+
+.btn {
+  margin: 10px;
 }
