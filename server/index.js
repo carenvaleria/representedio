@@ -13,8 +13,11 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.text())
 app.use(bodyParser.json())
-app.use(express.static(path.join(__dirname, "./client")))
+app.use(express.static(path.join(__dirname, '..', "./client")))
 
+app.use('/', (req, res) => {
+	res.sendFile(path.join(__dirname, '..', './client/index.html'))
+})
 app.use('/api', require('./api'))
 
 // error handling endware
