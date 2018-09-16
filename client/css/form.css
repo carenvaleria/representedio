@@ -1,0 +1,14 @@
+.logo-wrapper {
+  width: 20%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo-wrapper img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  display: table-cell;
+}

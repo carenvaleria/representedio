@@ -2,22 +2,22 @@ const Sequelize = require('sequelize')
 const db = require('./index')
 
 const Employee = db.define('employee', {
-	Gender: {
+	gender: {
 		type: Sequelize.STRING
 	},
-	Age: {
+	age: {
 		type: Sequelize.INTEGER
 	},
-	Race: {
+	race: {
 		type: Sequelize.STRING
 	},
-	Military: {
+	military: {
 		type: Sequelize.BOOLEAN
 	},
-	Disability: {
+	disability: {
 		type: Sequelize.BOOLEAN
 	},
-	LGBTQ: {
+	lgbt: {
 		type: Sequelize.BOOLEAN
 	}
 })
