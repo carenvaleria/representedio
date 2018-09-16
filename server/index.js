@@ -17,6 +17,10 @@ app.use(express.static(path.join(__dirname, "/index.html")))
 
 app.use('/api', require('./api'))
 
+app.use('/login', (req, res) => {
+	res.sendFile(path.join(__dirname, '..', '/signin.html'))	
+})
+
 app.use('*', (req, res) => {
 	res.sendFile(path.join(__dirname, '..', '/index.html'))
 })
