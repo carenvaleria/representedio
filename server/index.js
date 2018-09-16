@@ -21,6 +21,10 @@ app.use('/login', (req, res) => {
 	res.sendFile(path.join(__dirname, '..', '/signin.html'))	
 })
 
+app.use('/data', (req, res) => {
+	res.sendFile(path.join(__dirname, '..', '/barchart.html'))
+})
+
 app.use('*', (req, res) => {
 	res.sendFile(path.join(__dirname, '..', '/index.html'))
 })
